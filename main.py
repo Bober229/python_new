@@ -10,5 +10,6 @@
 
 a = ["ananas","apple","peach","candy","pear","neracuja","lemon","sweets"]
 for i in range(1):
-    a.remove("peach")
+    a.remove("candy")
+    a.remove("sweets")
 print(a)

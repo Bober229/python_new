@@ -36,13 +36,44 @@
 # zlata = Student(name="Zlata", age = 15)
 # zlata.printer()
 
-class Dino:
-    def __init__(self, name, kg=1, age=1):
+# class Animals:
+#     def __init__(self, name, kg=1, age=1):
+#         self.name = name
+#         self.kg = kg
+#         self.age = age
+#     def printer(self):
+#             print(self.name, self.kg, self.age)
+#     def grow(self,age=1):
+#             self.age += age
+#
+# dog = Animals(name="Dog", kg = 5, age=3)
+# cat = Animals(name="Cat", kg = 8, age=4)
+#
+# dog.grow(2)
+# dog.printer()
+# cat.printer()
+class Films:
+    def __init__(self, name, time = 60, views = 0, country="USA"):
         self.name = name
-        self.kg = kg
-        self.age = age
+        self.time = time
+        self.views = views
+        self.country = country
+        # self.age = age
     def printer(self):
-            print(self.name, self.kg, self.age)
+            print(self.name, self.time, self.views, self.country)
 
-trex = Dino(name="T-Rex", kg = 150)
-trex.printer()
+spiderman = Films(name="Spider-Man 2", time = 60, views = 10000, country="USA")
+batman = Films(name="BatMan 2022", time = 65, views = 15000, country="USA")
+opengamer = Films(name="OpenGamer", time = 120 , views = 1000000, country="United Kingdom")
+deadpul = Films(name="Deadpool 2", time = 180, views = 100000, country="USA")
+# add other films (ye, u can create other!)
+# deadpul = Films(name="Deadpool 2", time = 180, views = 100000, country="USA")
+spiderman.printer()
+batman.printer()
+opengamer.printer()
+deadpul.printer()
+# deadpul.printer()
+
+print(f"How much films, in this list?", self.)
+
+# зірочка рахування кількість фільмів скільки створили

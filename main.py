@@ -58,9 +58,11 @@ class Films:
         self.time = time
         self.views = views
         self.country = country
-        # self.age = age
     def printer(self):
             print(self.name, self.time, self.views, self.country)
+
+# if Films >= 1:
+#     print("Films", Films)
 
 spiderman = Films(name="Spider-Man 2", time = 60, views = 10000, country="USA")
 batman = Films(name="BatMan 2022", time = 65, views = 15000, country="USA")
@@ -74,6 +76,6 @@ opengamer.printer()
 deadpul.printer()
 # deadpul.printer()
 
-print(f"How much films, in this list?", self.)
+print(f"How much films, in this list?")
 
 # зірочка рахування кількість фільмів скільки створили

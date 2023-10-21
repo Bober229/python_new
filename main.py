@@ -8,7 +8,7 @@
 #     i += 1
 # print(i)
 
-list = ["ananas","apple","peach","candy","pear","neracuja","lemon","sweets"]
+a = ["ananas","apple","peach","candy","pear","neracuja","lemon","sweets"]
 for i in range(1):
-    list.remove("peach")
-print(list)
+    a.remove("peach")
+print(a)

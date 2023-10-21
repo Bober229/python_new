@@ -52,27 +52,33 @@
 # dog.grow(2)
 # dog.printer()
 # cat.printer()
+# Spider-Man 2, BatMan 2022, OpenGamer, Deadpool 2
 namef = input("Chance a name film: ")
 viewf = int(input("Chance a views: "))
 class Films:
-    def __init__(self, name, time = 60, views = 0, country="USA"):
+    def __init__(self, name, time = 60, views = 0, country="USA", numbers=0):
         self.name = name
         self.time = time
         self.views = views
         self.country = country
+        self.numbers = numbers
         if namef == self.name:
             self.views += viewf
-    def printer(self):
+    def printer(self, numbers):
             print(self.name, self.time, self.views, self.country)
+            print(numbers)
 
 
 spiderman = Films(name="Spider-Man 2", time = 60, views = 0, country="USA")
 batman = Films(name="BatMan 2022", time = 65, views = 0, country="USA")
 opengamer = Films(name="OpenGamer", time = 120 , views = 0, country="United Kingdom")
 deadpul = Films(name="Deadpool 2", time = 180, views = 0, country="USA")
+numbers = Films(numbers=0)
 spiderman.printer()
 batman.printer()
 opengamer.printer()
 deadpul.printer()
+numbers.printer()
+
 
 # зірочка рахування кількість фільмів скільки створили

@@ -52,22 +52,24 @@
 # dog.grow(2)
 # dog.printer()
 # cat.printer()
+namef = input("Chance a name film: ")
+viewf = int(input("Chance a views: "))
 class Films:
     def __init__(self, name, time = 60, views = 0, country="USA"):
         self.name = name
         self.time = time
         self.views = views
         self.country = country
+        if namef == self.name:
+            self.views += viewf
     def printer(self):
             print(self.name, self.time, self.views, self.country)
 
-# if Films >= 1:
-#     print("Films", Films)
 
-spiderman = Films(name="Spider-Man 2", time = 60, views = 10000, country="USA")
-batman = Films(name="BatMan 2022", time = 65, views = 15000, country="USA")
-opengamer = Films(name="OpenGamer", time = 120 , views = 1000000, country="United Kingdom")
-deadpul = Films(name="Deadpool 2", time = 180, views = 100000, country="USA")
+spiderman = Films(name="Spider-Man 2", time = 60, views = 0, country="USA")
+batman = Films(name="BatMan 2022", time = 65, views = 0, country="USA")
+opengamer = Films(name="OpenGamer", time = 120 , views = 0, country="United Kingdom")
+deadpul = Films(name="Deadpool 2", time = 180, views = 0, country="USA")
 spiderman.printer()
 batman.printer()
 opengamer.printer()

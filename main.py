@@ -68,14 +68,9 @@ spiderman = Films(name="Spider-Man 2", time = 60, views = 10000, country="USA")
 batman = Films(name="BatMan 2022", time = 65, views = 15000, country="USA")
 opengamer = Films(name="OpenGamer", time = 120 , views = 1000000, country="United Kingdom")
 deadpul = Films(name="Deadpool 2", time = 180, views = 100000, country="USA")
-# add other films (ye, u can create other!)
-# deadpul = Films(name="Deadpool 2", time = 180, views = 100000, country="USA")
 spiderman.printer()
 batman.printer()
 opengamer.printer()
 deadpul.printer()
-# deadpul.printer()
-
-print(f"How much films, in this list?")
 
 # зірочка рахування кількість фільмів скільки створили

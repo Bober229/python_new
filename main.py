@@ -1,11 +1,12 @@
+kickk = ''
 class Workers:
     def __init__(self, name, surname, old = 18, country="USA"):
         self.name = name
         self.surname = surname
         self.old = old
         self.country = country
-        # if printer == self.name:
-        #     self.views += viewf
+        if kickk == self.name:
+            kickk == kick
 
     def printer(self):
             print(self.name, self.surname, self.old, self.country)
@@ -19,10 +20,20 @@ menu = input("Привіт! Це головне меню, якщо вихочи�
 if menu == '1':
     printero = input("Виберіть людину, якої інформації хочете подивитись: ")
 elif menu == '2':
-    chanceold = input("Виберіть людину, який вік хочите змінити: ")
-    old = input("Виберіть дію віднімання, додавання (+, -): ")
-    finish = input("Виберіть скільки ви хочите відняти, додавати: ")
-
+    kickk = input("Впишіть старе імя: ")
+    kick = input("Впишіть нове імя: ")
+    if kickk == "Денис":
+        denis.printer()
+        break
+    elif kickk == "Дмитро":
+        dmitro.printer()
+        break
+    elif kickk == "Джордж":
+        dgordg.printer()
+        break
+    elif kickk == "Максим":
+        maksym.printer()
+        break
 
 if printero == "Денис":
     denis.printer()
@@ -32,5 +43,3 @@ elif printero == "Джордж":
     dgordg.printer()
 elif printero == "Максим":
     maksym.printer()
-
-

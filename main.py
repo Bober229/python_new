@@ -1,84 +1,36 @@
-# a = int(input("Введіть число: "))
-# sum = 0
-# i = 0
-# while sum <= 100:
-#     print(sum)
-#     sum += a
-#     # print(f"Число зміної a дорівнює {a}")
-#     i += 1
-# print(i)
-
-# a = ["ananas","apple","peach","candy","pear","neracuja","lemon","sweets"]
-# for i in range(1):
-#     if i == "candy" or i == "sweets":
-#             a.remove(i)
-#     # a.remove("candy")
-#     # a.remove("sweets")
-# print(a)
-# a = 5
-# def add():
-#     a = 3
-#     a += 5
-#     print(a)
-#
-# add()
-# print(a)
-
-# class Student:
-#     def __init__(self, name, age=12):
-#         self.name = name
-#         self.age = age
-#     def printer(self):
-#         print(self.name, self.age)
-#
-#
-# danylo = Student(name="Danylo", age = 13)
-# zlata = Student(name="Zlata", age = 15)
-# zlata.printer()
-
-# class Animals:
-#     def __init__(self, name, kg=1, age=1):
-#         self.name = name
-#         self.kg = kg
-#         self.age = age
-#     def printer(self):
-#             print(self.name, self.kg, self.age)
-#     def grow(self,age=1):
-#             self.age += age
-#
-# dog = Animals(name="Dog", kg = 5, age=3)
-# cat = Animals(name="Cat", kg = 8, age=4)
-#
-# dog.grow(2)
-# dog.printer()
-# cat.printer()
-# Spider-Man 2, BatMan 2022, OpenGamer, Deadpool 2
-namef = input("Chance a name film: ")
-viewf = int(input("Chance a views: "))
-class Films:
-    def __init__(self, name, time = 60, views = 0, country="USA", numbers=0):
+class Workers:
+    def __init__(self, name, surname, old = 18, country="USA"):
         self.name = name
-        self.time = time
-        self.views = views
+        self.surname = surname
+        self.old = old
         self.country = country
-        self.numbers = numbers
-        if namef == self.name:
-            self.views += viewf
-    def printer(self, numbers):
-            print(self.name, self.time, self.views, self.country)
-            print(numbers)
+        # if printer == self.name:
+        #     self.views += viewf
+
+    def printer(self):
+            print(self.name, self.surname, self.old, self.country)
+
+denis = Workers(name="Денис", surname ="Міллер", old = 19, country="United Kingdom")
+dmitro = Workers(name="Дмитро", surname="Геймер", old = 25, country="USA")
+dgordg = Workers(name="Джордж", surname="Королевий", old = 23, country="United Kingdom")
+maksym = Workers(name="Максим", surname="Дмитрович", old = 21, country="USA")
+
+menu = input("Привіт! Це головне меню, якщо вихочите подивитись список працівників напишіть '1': \nЯкщо ви хочите змінивік людини, напишіть '2': ")
+if menu == '1':
+    printero = input("Виберіть людину, якої інформації хочете подивитись: ")
+elif menu == '2':
+    chanceold = input("Виберіть людину, який вік хочите змінити: ")
+    old = input("Виберіть дію віднімання, додавання (+, -): ")
+    finish = input("Виберіть скільки ви хочите відняти, додавати: ")
 
 
-spiderman = Films(name="Spider-Man 2", time = 60, views = 0, country="USA")
-batman = Films(name="BatMan 2022", time = 65, views = 0, country="USA")
-opengamer = Films(name="OpenGamer", time = 120 , views = 0, country="United Kingdom")
-deadpul = Films(name="Deadpool 2", time = 180, views = 0, country="USA")
-numbers = Films(numbers=0)
-spiderman.printer()
-batman.printer()
-opengamer.printer()
-deadpul.printer()
-numbers.printer()
+if printero == "Денис":
+    denis.printer()
+elif printero == "Дмитро":
+    dmitro.printer()
+elif printero == "Джордж":
+    dgordg.printer()
+elif printero == "Максим":
+    maksym.printer()
 
 
-# зірочка рахування кількість фільмів скільки створили

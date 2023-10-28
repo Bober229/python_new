@@ -12,27 +12,27 @@ denis = Workers(name="Денис", surname ="Міллер", old = 19, country="U
 dmitro = Workers(name="Дмитро", surname="Геймер", old = 25, country="USA")
 dgordg = Workers(name="Джордж", surname="Королевий", old = 23, country="United Kingdom")
 maksym = Workers(name="Максим", surname="Дмитрович", old = 21, country="USA")
-
+old = ""
 menu = input("Привіт! Це головне меню, якщо вихочите подивитись список працівників напишіть '1': \nЯкщо ви хочите змінивік людини, напишіть '2': ")
 if menu == '1':
     printero = input("Виберіть людину, якої інформації хочете подивитись: ")
-elif menu == '2':
-    kickk = input("Впишіть старе імя: ")
-    kick = input("Впишіть нове імя: ")
-    if kickk == "Денис":
+    if printero == "Денис":
         denis.printer()
-    elif kickk == "Дмитро":
+    elif printero == "Дмитро":
         dmitro.printer()
-    elif kickk == "Джордж":
+    elif printero == "Джордж":
         dgordg.printer()
-    elif kickk == "Максим":
+    elif printero == "Максим":
         maksym.printer()
+elif menu == '2':
+    old2 = input("Впишіть імя: ")
+    old1 = input("Впишіть на скільки років він виріс: ")
+    if old2 == "Денис":
 
-if printero == "Денис":
-    denis.printer()
-elif printero == "Дмитро":
-    dmitro.printer()
-elif printero == "Джордж":
-    dgordg.printer()
-elif printero == "Максим":
-    maksym.printer()
+        denis.printer()
+    elif old2 == "Дмитро":
+        dmitro.printer()
+    elif old2 == "Джордж":
+        dgordg.printer()
+    elif old2 == "Максим":
+        maksym.printer()

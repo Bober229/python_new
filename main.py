@@ -1,6 +1,6 @@
-num = 5
-num1 = 21
-nnum = 0
-if num <= 47:
-    while nnum < num:
-        print(num+5==nnum)
+num = int(input("Write a number: "))
+num1 = int(input("Write a number: "))
+target = 321
+if num <= target:
+    while num != 7.3:
+        print((5*num+num1)/3)

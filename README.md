@@ -1,6 +1,2 @@
-# python_new
-Repository for Python
-R
-W
-REWE
-WERWEREWREWRWEREWRWERWE
+# ДЗ
+Вписуйте імя (Денис, Дмитро, Джордж, Максим). Для виконання команд і т.д

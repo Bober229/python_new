@@ -1,7 +1,13 @@
-num = 5
-num1 = 21
-target = 321
-a = 7
-b = 4
-# if num <= target:
-#     print((5*a+num1-num*b)/3)
+num = 6
+num1 = 11
+target = 333
+a = 5
+b = 9
+d = 0
+if num <= target:
+    d = target/b
+if 
+
+print(f"Мінімальна кількикість монет, до суми {target}: ")
+print(f"{num} монеток по {num}")
+print(f"{b} по {d}")

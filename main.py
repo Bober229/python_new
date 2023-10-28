@@ -5,9 +5,6 @@ class Workers:
         self.surname = surname
         self.old = old
         self.country = country
-        if kickk == self.name:
-            kickk == kick
-
     def printer(self):
             print(self.name, self.surname, self.old, self.country)
 
@@ -24,16 +21,12 @@ elif menu == '2':
     kick = input("Впишіть нове імя: ")
     if kickk == "Денис":
         denis.printer()
-        break
     elif kickk == "Дмитро":
         dmitro.printer()
-        break
     elif kickk == "Джордж":
         dgordg.printer()
-        break
     elif kickk == "Максим":
         maksym.printer()
-        break
 
 if printero == "Денис":
     denis.printer()

@@ -1,5 +1,5 @@
-num = int(input("Write a number: "))
-num1 = int(input("Write a number: "))
+num = 5
+num1 = 21
 target = 321
 if num <= target:
     while num != 7.3:

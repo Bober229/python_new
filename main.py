@@ -24,14 +24,14 @@ num = 6
 num1 = 11
 target = 333
 a = 3
-b = 11
+b = 4
 d = 0
 c = 0
 if num1 != a:
-    c = target-num1
+    c = target/a-num1/a
 if target != num1:
-    d
+    d = num1/11
 print(f"Мінімальна кількикість монет, до суми {target}: ")
-print(f"{a} монеток по {c}")
-print(f"{b} по {d}")
+print(f"{a} монеток по {c} ({a*c})")
+print(f"{b} по {d} ({d*b})")
 print(b*d+a*c)

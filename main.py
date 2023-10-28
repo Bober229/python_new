@@ -1,7 +1,7 @@
 num = 5
 num1 = 21
 target = 321
-if num <= target:
-    while num == 5:
-        print((6*num+num1)/3)
-        break
+a = 7
+b = 4
+# if num <= target:
+#     print((5*a+num1-num*b)/3)

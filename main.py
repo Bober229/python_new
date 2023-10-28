@@ -1,7 +1,10 @@
+global old1
+global old2
 menu = input("Привіт! Це головне меню, якщо вихочите подивитись список працівників напишіть '1': \nЯкщо ви хочите змінивік людини, напишіть '2': ")
 if menu == '2':
     old2 = input("Впишіть імя: ")
     old1 = input("Впишіть на скільки років він виріс: ")
+    print(old2)
 class Workers:
     def __init__(self, name, surname, old = 18, country="USA"):
         self.name = name
@@ -10,11 +13,10 @@ class Workers:
         self.country = country
     def printer(self):
             print(self.name, self.surname, self.old, self.country)
-    def printerage(self, old, name, old1):
+    def printerage(self, old1):
         if old2 == self.name:
             old1 += self.old
-            print(old2)
-        print(old)
+
 
 
 

@@ -1,6 +1,2 @@
-# python_new
-Repository for Python
-R
-W
-REWE
-WERWEREWREWRWEREWRWERWE
+#ДЗ
+Вписуйте числа, за першого гравця, та за другого, вгадуйте число.

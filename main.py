@@ -1,12 +1,8 @@
-a = 5
-b = 8
-def abc():
-    a = 3
-    print(a)
-    b = a +6
-    print(b)
+class Parent():
+    age = 40
 
-print(a)
-print(b)
+class Son(Parent):
+    age = 15
 
-abc()
+acd = Son()
+print(acd.age)

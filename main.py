@@ -134,24 +134,34 @@
 # b = Hi()
 # a.pr()
 # b.hi_pr()
-p = "passwordRR"
-print(len(p))
+p = input("Введіть свій пароль: ")
+pas = [p]
+len == len(pas)
 menu = input("Вітаємо у щодденику. Подивитись росклад - 1, подивитись пароль - 2.")
 class Student():
-    def __init__(self, name, subject):
+    def __init__(self, name):
         self.name = name
-        self.subject = subject
     def printer(self):
-        print(self.name, self.subject)
+        print(self.name)
 student = Student(name="Вадим")
-class Diary():
-    def __init__(self, name, password):
-        self.name = name
-        self.password = password
-    def printer(self):
-        print(self.name, self.subject)
-diary = Diary(name="Вадим")
-class Subject():
+
+class Diary(Student):
+    password = pas
+    def __init__(self, password):
+        self.password = pas
+        self.__password = pas
+    def defaultp(self):
+        print(self.password)
+    def secretp(self, __password):
+        print(self.__password)
+
+diary = Diary(password=pas)
+# for checkpass in len:
+#     check = 1 * len(p)
+#     if check == len(p):
+#         print(f"{check}")
+
+class Subject(Student):
     def __init__(self, subject):
         self.subject = subject
     def printer(self):
@@ -161,5 +171,9 @@ if menu == "1":
     student.printer()
     subject.printer()
 if menu == "2":
-    pass
+    passwordcheck = int(input("Яким чином, ви хочите вивести пароль? 1 - простий, 2 - засекречиний."))
+    if passwordcheck == 1:
+        diary.defaultp()
+    if passwordcheck == 2:
+        diary.secretp()
 # 3 класи 2 дочірних. 1 батьківський. Студент, щоденник, предмет. Треба додати можливість виводити його розклад та пароль.Якщо він виводить пароль через print(password) - виводиться пароль зірочками. Якщо приватом - виводиться сам пароль.

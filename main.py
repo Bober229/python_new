@@ -38,7 +38,7 @@ class Students(Group):
 
 pavel = Students(name="Павло", age="16")
 vadim = Students(name="Вадим", age="17")
-oleksander = Students(name="Олександр", age="31")
+oleksander = Students(name="Олександр", age="15")
 class Teachers(University):
     def __init__(self, tname, tage):
         self.tname = tname

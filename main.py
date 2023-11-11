@@ -1,8 +1,18 @@
-class Parent():
-    age = 40
+class Human():
+    age = 24
+    job = "-"
 
-class Son(Parent):
-    age = 15
+class Worker(Human):
+    age = 35
+    job = "Офісник працівник"
 
-acd = Son()
-print(acd.age)
+class Student(Human):
+    age = 19
+    parent_job = "-"
+
+work = Worker()
+stund = Student()
+human = Human()
+#print(human.age, human.job)
+print(work.age, work.job)
+print(stund.age, stund.job)

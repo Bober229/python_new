@@ -92,16 +92,42 @@
 # # print(subjects.subs)
 # # print(subjects.marks)
 
-class Grandparent():
-    def hello(self):
-        print("hello") #public
-    def _hello(self):
-        print("_hello") #protected
-    def __hello(self):
-        print("__hello") #privat
+# class Grandparent():
+#     def hello(self):
+#         print("hello") #public
+#     def _hello(self):
+#         print("_hello") #protected
+#     def __hello(self):
+#         print("__hello") #privat
+#
+# a = Grandparent()
+#
+# a.hello()
+# a._hello()
+# a._Grandparent__hello()
 
-a = Grandparent()
+class Parent():
+    hello = "Hello"
+    _hello = "_Hello"
+    __hello = "__Hello"
+    def __init__(self):
+        self.world = "World"
+        self._world = "_World"
+        self.__world = "__World"
 
-a.hello()
-a._hello()
-a._Grandparent__hello()
+    def pr(self):
+        print(self.hello)
+        print(self.world)
+        print(self._hello)
+        print(self._world)
+        print(self.__hello)
+        print(self.__world)
+class Hi(Parent):
+    def hi_pr(self):
+        print(self.hello)
+        print(self.world)
+        print(self._hello)
+        print(self._world)
+        print(self.__hello)
+        print(self.__world)
+    

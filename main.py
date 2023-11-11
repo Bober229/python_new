@@ -134,34 +134,32 @@
 # b = Hi()
 # a.pr()
 # b.hi_pr()
-
-
+p = "passwordRR"
+print(len(p))
+menu = input("Вітаємо у щодденику. Подивитись росклад - 1, подивитись пароль - 2.")
 class Student():
-    hello = "Hello"
-    _hello = "_Hello"
-    __hello = "__Hello"
-    def __init__(self):
-        self.world = "World"
-        self._world = "_World"
-        self.__world = "__World"
-
-    def pr(self):
-        print(self.hello)
-        print(self.world)
-        print(self._hello)
-        print(self._world)
-        print(self.__hello)
-        print(self.__world)
+    def __init__(self, name, subject):
+        self.name = name
+        self.subject = subject
+    def printer(self):
+        print(self.name, self.subject)
+student = Student(name="Вадим")
+class Diary():
+    def __init__(self, name, password):
+        self.name = name
+        self.password = password
+    def printer(self):
+        print(self.name, self.subject)
+diary = Diary(name="Вадим")
+class Subject():
+    def __init__(self, subject):
+        self.subject = subject
+    def printer(self):
+        print(self.subject)
+subject = Subject(subject=["Фізкультура","Математика","ІТ","Фізика","Біологія","Хімія"])
+if menu == "1":
+    student.printer()
+    subject.printer()
+if menu == "2":
+    pass
 # 3 класи 2 дочірних. 1 батьківський. Студент, щоденник, предмет. Треба додати можливість виводити його розклад та пароль.Якщо він виводить пароль через print(password) - виводиться пароль зірочками. Якщо приватом - виводиться сам пароль.
-class Hi(Parent):
-    def hi_pr(self):
-        print(self.hello)
-        print(self.world)
-        print(self._hello)
-        print(self._world)
-        print(self._Parent__hello)
-        print(self._Parent__world)
-a = Parent()
-b = Hi()
-a.pr()
-b.hi_pr()

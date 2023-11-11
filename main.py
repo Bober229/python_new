@@ -106,7 +106,37 @@
 # a._hello()
 # a._Grandparent__hello()
 
-class Parent():
+# class Parent():
+#     hello = "Hello"
+#     _hello = "_Hello"
+#     __hello = "__Hello"
+#     def __init__(self):
+#         self.world = "World"
+#         self._world = "_World"
+#         self.__world = "__World"
+#
+#     def pr(self):
+#         print(self.hello)
+#         print(self.world)
+#         print(self._hello)
+#         print(self._world)
+#         print(self.__hello)
+#         print(self.__world)
+# class Hi(Parent):
+#     def hi_pr(self):
+#         print(self.hello)
+#         print(self.world)
+#         print(self._hello)
+#         print(self._world)
+#         print(self._Parent__hello)
+#         print(self._Parent__world)
+# a = Parent()
+# b = Hi()
+# a.pr()
+# b.hi_pr()
+
+
+class Student():
     hello = "Hello"
     _hello = "_Hello"
     __hello = "__Hello"
@@ -122,12 +152,16 @@ class Parent():
         print(self._world)
         print(self.__hello)
         print(self.__world)
+# 3 класи 2 дочірних. 1 батьківський. Студент, щоденник, предмет. Треба додати можливість виводити його розклад та пароль.Якщо він виводить пароль через print(password) - виводиться пароль зірочками. Якщо приватом - виводиться сам пароль.
 class Hi(Parent):
     def hi_pr(self):
         print(self.hello)
         print(self.world)
         print(self._hello)
         print(self._world)
-        print(self.__hello)
-        print(self.__world)
-    
+        print(self._Parent__hello)
+        print(self._Parent__world)
+a = Parent()
+b = Hi()
+a.pr()
+b.hi_pr()

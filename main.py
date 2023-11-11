@@ -15,7 +15,6 @@ if words == words:
         if words[randnum] == "Поле":
             word = input("Впишіть першу букву:")
             if word == sword[0] or sword[1] or sword[2] or sword[3]:
-                print("Чудово! Ви вгадали першу слово!")
                 if word == sword[0]:
                     print(f"{word}■■■")
                 elif word == sword[1]:
@@ -24,20 +23,23 @@ if words == words:
                     print(f"■■{word}■")
                 elif word == sword[3]:
                     print(f"■■{word}")
+                print("Чудово! Ви вгадали першу букву!")
             wordt = input("Впишіть другу букву:")
-            if wordt == sword[0] or sword[1] or sword[2] or sword[3]:
-                print("Чудово! Ви вгадали першу слово!")
+            if wordt == sword[0] or sword[1] or sword[2] or sword[3] or sword[4]:
+                print("Чудово! Ви вгадали другу букву!")
                 if wordt == sword[1] and word == sword[0]:
                     print(f"{word}{wordt}■■")
                 elif wordt == sword[3] and word == sword[1]:
-                    print(f"■{word}■■")
+                    print(f"{wordt}{word}■■")
                 elif wordt == sword[3] and word == sword[2]:
-                    print(f"■■{word}■")
-                elif wordt == sword[4] and word == sword[3]:
-                    print(f"■■{word}")
+                    print(f"■■{word}{wordt}")
+                elif wordt == sword[3] and word == sword[2]:
+                    print(f"■{wordt}{word}")
+                elif wordt == sword[1] and word == sword[2]:
+                    print(f"■{word}{wordt}")
             wordth = input("Впишіть третью букву:")
             if word == sword[0] or sword[1] or sword[2] or sword[3]:
-                print("Чудово! Ви вгадали першу слово!")
+                print("Чудово! Ви вгадали третью букву!")
                 if wordth == sword[0] and word == sword[1] and wordt == sword[2]:
                     print(f"{wordth}{word}■■")
                 elif wordth == sword[1] and word == sword[0] and wordt == sword[3]:
@@ -48,7 +50,7 @@ if words == words:
                 #     print(f"■■{word}")
             wordf = input("Впишіть четверту букву:")
             if wordf == sword[0] or sword[1] or sword[2] or sword[3]:
-                print("Чудово! Ви вгадали першу слово!")
+                print("Чудово! Ви вгадали четверту букву!")
                 if wordt == sword[1] and word == sword[0]:
                     print(f"{word}{wordt}■■")
                 elif wordt == sword[3] and word == sword[1]:

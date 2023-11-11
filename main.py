@@ -24,26 +24,31 @@ class University():
     name = "Epic IT"
 
 class Group(University):
-    age = 35
-    parent_glass_color = "blue"
-    job = "Лікар"
+    mushstudent = "13"
+    group = "4"
 
 class Students(Group):
     age = 19
     name = "Денис"
     parent_group = "4"
 
-class Teacher(University):
-    tname = "Дмитро"
-    tage = 24
-    parent_group = ""
-    
-
 class Subjects(Students, Teacher):
-    subname = "Інформатика"
-    mark = "10"
+    subs = ["Математика", "ІТ", "Фізика", "Фізкультура"]
+    marks = [12,11,9,11]
 
-#a = int(input("Введіть 1 - додати вчителя. \nВведіть 2 - щоб додат студента:"))
+a = int(input("Введіть 1 - додати вчителя/вивести вчителів. \nВведіть 2 - додати студента/вивести студентів:"))
+if a == 1:
+    aa = input("Що ви хочите? Вивести вчителів - 1, додати вчителів - 2.")
+    if aa == "1":
+        class Teachers(University):
+            tname = "Дмитро"
+            tage = 24
+            def __init__(self, tname, tage):
+                self.tname = tname
+                self.tage = tage
+                def print(self, tname, tage):
+                    print(self.tname, self.tage)
+dmitro = 
 
 univer = University()
 group = University()
@@ -51,5 +56,6 @@ stund = Students()
 teacher = Teacher()
 subjects = Subjects()
 #print(human.age, human.job)
-print(group.p)
-print(stund.parent_age, stund.university, stund.glass_color)
+print(group.name)
+print(subjects.subs)
+print(subjects.marks)

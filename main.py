@@ -1,84 +1,22 @@
-# a = int(input("Введіть число: "))
-# sum = 0
-# i = 0
-# while sum <= 100:
-#     print(sum)
-#     sum += a
-#     # print(f"Число зміної a дорівнює {a}")
-#     i += 1
-# print(i)
+# змінна - це змінна якось числа, або значення коду. Приклад: a = 4, зміною можна зробити різні речі: a = 4-3, a = input("Якесь значення: ")
+# 2. - str, int, bool, словник, лист
+# 3. - функція - це команда приймає обєкти. def(main):
+# 4. string (lower, upper)
+# 6. - це команда або шаблон, для створення різних команд. Та функцій в середині неї, класи більш точніше використовують, для одинакових обєкстів т.д.
+# 5. protect, privat, public
+# 7. while True:
+# print("hello wrold!")
 
-# a = ["ananas","apple","peach","candy","pear","neracuja","lemon","sweets"]
-# for i in range(1):
-#     if i == "candy" or i == "sweets":
-#             a.remove(i)
-#     # a.remove("candy")
-#     # a.remove("sweets")
-# print(a)
-# a = 5
-# def add():
-#     a = 3
-#     a += 5
-#     print(a)
-#
-# add()
-# print(a)
+bankmain = int(input("Вітаємо у Банківському сейфу! Виберіть: \n 1 - щоби створити нового користувача: \n 2 - вписати данні."))
 
-# class Student:
-#     def __init__(self, name, age=12):
-#         self.name = name
-#         self.age = age
-#     def printer(self):
-#         print(self.name, self.age)
-#
-#
-# danylo = Student(name="Danylo", age = 13)
-# zlata = Student(name="Zlata", age = 15)
-# zlata.printer()
+class BankLogin():
+ def()
 
-# class Animals:
-#     def __init__(self, name, kg=1, age=1):
-#         self.name = name
-#         self.kg = kg
-#         self.age = age
-#     def printer(self):
-#             print(self.name, self.kg, self.age)
-#     def grow(self,age=1):
-#             self.age += age
-#
-# dog = Animals(name="Dog", kg = 5, age=3)
-# cat = Animals(name="Cat", kg = 8, age=4)
-#
-# dog.grow(2)
-# dog.printer()
-# cat.printer()
-# Spider-Man 2, BatMan 2022, OpenGamer, Deadpool 2
-namef = input("Chance a name film: ")
-viewf = int(input("Chance a views: "))
-class Films:
-    def __init__(self, name, time = 60, views = 0, country="USA", numbers=0):
-        self.name = name
-        self.time = time
-        self.views = views
-        self.country = country
-        self.numbers = numbers
-        if namef == self.name:
-            self.views += viewf
-    def printer(self, numbers):
-            print(self.name, self.time, self.views, self.country)
-            print(numbers)
+if bankmain == 1:
+  pass
 
+#Зробити програмку “Банківський сейф”:
 
-spiderman = Films(name="Spider-Man 2", time = 60, views = 0, country="USA")
-batman = Films(name="BatMan 2022", time = 65, views = 0, country="USA")
-opengamer = Films(name="OpenGamer", time = 120 , views = 0, country="United Kingdom")
-deadpul = Films(name="Deadpool 2", time = 180, views = 0, country="USA")
-numbers = Films(numbers=0)
-spiderman.printer()
-batman.printer()
-opengamer.printer()
-deadpul.printer()
-numbers.printer()
+#Користувач вводить якісь данні і вибирає захищеність після чого його данні шифруються і ховаються. Отримати свої данні може тільки він. Зробіть можливість створення декількох користувачів.
 
-
-# зірочка рахування кількість фільмів скільки створили
+#На вхід подаються числа, які відразу приховуються і з якими всередині інкапсульованого методу проводиться випадкова математична операція. Якщо ж вивести об’єкт, на екрані з’явиться результат обчислень.
